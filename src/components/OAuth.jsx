@@ -25,8 +25,8 @@ const OAuth = () => {
                     googlePhotoUrl: resultsFromGoogle.user.photoURL,
                 })
             })
-            console.log("oatuth", res)
             const data = await res.json();
+            console.log("oatuth", data)
             if(res.ok){
                 dispatch(signInSuccess(data))
                 navigate('/')
