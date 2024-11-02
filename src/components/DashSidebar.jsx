@@ -80,6 +80,15 @@ export default function DashSidebar() {
           )}
           {currentUser.isAdmin && (
             <>
+            <Link to='/create-post'>
+                <Sidebar.Item
+                  // active={tab === 'comments'}
+                  icon={HiDocumentText}
+                  as='div'
+                >
+                  Add Post
+                </Sidebar.Item>
+              </Link>
               <Link to='/dashboard?tab=users'>
                 <Sidebar.Item
                   active={tab === 'users'}
