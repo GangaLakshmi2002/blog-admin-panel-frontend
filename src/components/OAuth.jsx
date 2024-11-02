@@ -25,6 +25,7 @@ const OAuth = () => {
                     googlePhotoUrl: resultsFromGoogle.user.photoURL,
                 })
             })
+            console.log(res);
             const data = await res.json();
             console.log("oatuth", data)
             if(res.ok){
