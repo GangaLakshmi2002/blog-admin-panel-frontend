@@ -24,6 +24,7 @@ export default function CommentSection({ postId }) {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include',
         body: JSON.stringify({
           content: comment,
           postId,
@@ -44,7 +45,9 @@ export default function CommentSection({ postId }) {
   useEffect(() => {
     const getComments = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/comment/getPostComments/${postId}`);
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/comment/getPostComments/${postId}`, {
+          credentials: 'include'
+        });
         if (res.ok) {
           const data = await res.json();
           setComments(data);
@@ -64,6 +67,7 @@ export default function CommentSection({ postId }) {
       }
       const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/comment/likeComment/${commentId}`, {
         method: 'PUT',
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -101,6 +105,7 @@ export default function CommentSection({ postId }) {
       }
       const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/comment/deleteComment/${commentId}`, {
         method: 'DELETE',
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();

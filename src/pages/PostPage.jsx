@@ -38,7 +38,7 @@ export default function PostPage() {
   useEffect(() => {
     try {
       const fetchRecentPosts = async () => {
-        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/post/getposts?limit=3`);
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/post/getposts?limit=3`, {credentials: 'include'});
         const data = await res.json();
         if (res.ok) {
           setRecentPosts(data.posts);

@@ -28,7 +28,8 @@ const SignIn = () => {
       const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/auth/signin`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
+        credentials: 'include'
       });
       const data = await res.json();
       if(data.success === false){
