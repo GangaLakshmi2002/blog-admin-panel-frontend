@@ -26,7 +26,7 @@ const Header = () => {
     }, [location.search]);
     const handleSignout = async () => {
       try {
-        const res = await fetch('/api/user/signout', {
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/signout`, {
           method: 'POST'
         });
         const data = await res.json();
