@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration for gangajyothi email
 const firebaseConfig = {
   apiKey: "AIzaSyBmYyYYedkBBdS40qD6-Mp75T_uQg69G70",
   authDomain: "mernblog-e7d37.firebaseapp.com",
