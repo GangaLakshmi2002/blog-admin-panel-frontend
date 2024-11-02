@@ -36,7 +36,7 @@ export default function DashComments() {
     const startIndex = comments.length;
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/comment/getcomments?startIndex=${startIndex}`
+        `${import.meta.env.VITE_API_BASE_URL}/api/comment/getcomments?startIndex=${startIndex}`,
         {credentials: 'include'}
       );
       const data = await res.json();
