@@ -32,6 +32,7 @@ const Home = () => {
           <div className='flex flex-col gap-6'>
             <h2 className='text-2xl font-semibold text-center'>Recent Posts</h2>
             <div className='flex flex-wrap gap-4'>
+              {console.log("posts", posts)}
               {posts.map((post) => (
                 <PostCard key={post._id} post={post} />
               ))}

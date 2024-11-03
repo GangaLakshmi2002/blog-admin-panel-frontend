@@ -13,7 +13,7 @@ const FooterCom = () => {
                     <Link to='/'
                       className='self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white'>
                       <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-                        Sahand's</span>
+                        Ganga's</span>
                         Blog
                     </Link>
                 </div>
@@ -33,7 +33,7 @@ const FooterCom = () => {
                               target='_blank'
                               rel='noopener noreferrer'
                             >
-                                Sahand's Blog
+                                Ganga's Blog
                             </Footer.Link>
                         </Footer.LinkGroup>
                     </div>
@@ -41,7 +41,7 @@ const FooterCom = () => {
               <Footer.Title title='Follow us' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://www.github.com/sahandghavidel'
+                  href='https://www.github.com/gangalakshmi.mudda'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -64,14 +64,14 @@ const FooterCom = () => {
         <div className='w-full sm:flex sm:items-center sm:justify-between'>
           <Footer.Copyright
             href='#'
-            by="Sahand's blog"
+            by="Ganga's blog"
             year={new Date().getFullYear()}
           />
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
             <Footer.Icon href='#' icon={BsFacebook}/>
             <Footer.Icon href='#' icon={BsInstagram}/>
             <Footer.Icon href='#' icon={BsTwitter}/>
-            <Footer.Icon href='https://github.com/sahandghavidel' icon={BsGithub}/>
+            <Footer.Icon href='https://github.com/Ganga' icon={BsGithub}/>
             <Footer.Icon href='#' icon={BsDribbble}/>
 
           </div>
